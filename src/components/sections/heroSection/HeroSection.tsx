@@ -3,7 +3,7 @@ import Image, { StaticImageData } from "next/image";
 import HeroImage from "../../../assets/svg/home/topview.svg";
 import HeroImage2 from "../../../assets/svg/home/hanthana.svg";
 
-const Fade = require("react-reveal/Fade");
+import { Fade } from "react-awesome-reveal";
 type HeroSectionProps = {
   title: string;
   subTitle: string;
@@ -17,7 +17,7 @@ export const HeroSection = ({
     <>
       <div className="heroContainer mx-auto max-w-[1400px] items-center flex min-h-[80vh] md:min-h-[40vh] lg:min-h-[95vh]  lg:px-0">
         <div className="grid  md:grid-cols-5 gap-20 grid-cols-1 items-center h-[100%]">
-          <Fade bottom>
+          <Fade direction="up">
             <div className="mt-20 md:mt-0 block md:hidden col-span-2">
               <Image
                 src={HeroImage}
@@ -26,9 +26,9 @@ export const HeroSection = ({
               />
             </div>
           </Fade>
-          <Fade bottom>
+          <Fade direction="up">
             <div className="col-span-3 block md:hidden mt-10 md:mt-0">
-              <Fade bottom>
+              <Fade direction="up">
                 <h1
                   className="heroTitle font-poppins text-start md:text-start font-[600] text-3xl md:text-5xl lg:text-6xl text-primaryColor"
                   style={{ lineHeight: "1.2" }}
@@ -36,7 +36,7 @@ export const HeroSection = ({
                   {title}
                 </h1>
               </Fade>
-              <Fade bottom>
+              <Fade direction="up">
                 <h2
                   className="heroSubTitle text-xl text-start md:text-start font-[600]  md:text-2xl lg:text-3xl md:pt-6 font-poppins"
                   style={{
@@ -52,9 +52,9 @@ export const HeroSection = ({
               </Fade>
             </div>
           </Fade>
-          <Fade left>
+          <Fade direction="left">
             <div className="col-span-2 hidden md:block md:mt-0">
-              <Fade bottom>
+              <Fade direction="up">
                 <h1
                   className="heroTitle font-poppins text-center md:text-start font-[600] text-3xl md:text-5xl lg:text-6xl text-primaryColor"
                   style={{ lineHeight: "1.2" }}
@@ -62,7 +62,7 @@ export const HeroSection = ({
                   {title}
                 </h1>
               </Fade>
-              <Fade bottom>
+              <Fade direction="up">
                 <h2
                   className="heroSubTitle text-xl text-center md:text-start font-[600]  md:text-2xl lg:text-3xl md:pt-6 font-poppins"
                   style={{
@@ -78,7 +78,7 @@ export const HeroSection = ({
               </Fade>
             </div>
           </Fade>
-          <Fade right>
+          <Fade direction="right">
             <div className="hidden md:block col-span-3">
               <Image src={HeroImage} alt="" className="w-full z-20 " />
             </div>

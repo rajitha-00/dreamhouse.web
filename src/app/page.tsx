@@ -15,8 +15,7 @@ import Mission4 from "../assets/svg/home/lobby.svg";
 import Head from "next/head";
 import { ContactForm } from "@/components/Forms/ContactForm/ContactForm";
 
-const Fade = require("react-reveal/Fade");
-
+import { Fade } from "react-awesome-reveal";
 const Home: React.FC = () => {
   return (
     <>
@@ -33,7 +32,8 @@ const Home: React.FC = () => {
       </Head>
       <div className="heroContainer px-5 mx-auto max-w-[1300px] lg:px-0  sm:min-h-[80vh] md:min-h-[50vh] md:h-auto lg:min-h-[90vh] items-center flex  ">
         <div className="grid md:grid-cols-5 grid-cols-1 items-center h-[100%]">
-          <Fade bottom>
+          <Fade direction="up">
+            {" "}
             <div className="block md:hidden col-span-2 relative">
               <Image
                 src={HeroImage}
@@ -42,7 +42,8 @@ const Home: React.FC = () => {
               />
             </div>
           </Fade>
-          <Fade bottom>
+          <Fade direction="up">
+            {" "}
             <div className="col-span-3 block md:hidden mt-96">
               <h1
                 className="heroTitle font-poppins font-[600] text-4xl text-start md:text-start md:text-4xl  text-primaryColor "
@@ -71,7 +72,7 @@ const Home: React.FC = () => {
               </div>
             </div>
           </Fade>
-          <Fade left>
+          <Fade direction="left">
             <div className="col-span-2 hidden md:block mt-20 md:mt-0">
               <h1
                 className="heroTitle font-poppins font-[600] text-3xl text-center md:text-start md:text-4xl lg:text-6xl text-primaryColor pt-10"
@@ -105,7 +106,7 @@ const Home: React.FC = () => {
               </div>
             </div>
           </Fade>
-          <Fade right>
+          <Fade direction="right">
             <div className="mt-10 hidden md:block md:mt-0 col-span-3 md:pl-20">
               <Image src={HeroImage} alt="" className="w-full  " />
             </div>
@@ -116,12 +117,14 @@ const Home: React.FC = () => {
       <div>
         <section className="h-auto mt-20 lg:mt-40 px-5 mx-auto max-w-[1300px] lg:px-0  md:min-h-[60vh] ">
           <div className="grid gap-10 lg:gap-32 lg:grid-cols-2 grid-cols-1  items-center justify-between h-auto">
-            <Fade left>
+            <Fade direction="left">
               <div className="col">
-                <Fade bottom>
+                <Fade direction="up">
+                  {" "}
                   <PageTitle start title="Amidst Nature and Culture" />
                 </Fade>
-                <Fade bottom>
+                <Fade direction="up">
+                  {" "}
                   <div className="mt-5">
                     <Paragraph
                       start
@@ -131,29 +134,33 @@ const Home: React.FC = () => {
                 </Fade>
               </div>
             </Fade>
-            <Fade right>
+            <Fade direction="right">
               <div className="col mt-5 md:mt-0">
                 <div className="grid grid-cols-1  md:grid-cols-2 gap-4">
                   <div className="grid-cols-1 md:gap-4">
-                    <Fade bottom>
+                    <Fade direction="up">
+                      {" "}
                       <div className="  h-auto  col-span-1">
                         <CardforImage alt="" path={Card1} />
                       </div>
                     </Fade>
-                    <Fade bottom>
+                    <Fade direction="up">
+                      {" "}
                       <div className="mt-5  h-auto col-span-1">
                         <CardforImage path={Card2} alt="" />
                       </div>
                     </Fade>
                   </div>
                   <div>
-                    <Fade bottom>
+                    <Fade direction="up">
+                      {" "}
                       <div className="  h-auto col-span-1">
                         <CardforImage path={Card3} alt="" />
                       </div>
                     </Fade>
 
-                    <Fade bottom>
+                    <Fade direction="up">
+                      {" "}
                       <div className=" mt-5 h-auto  col-span-1">
                         <CardforImage alt="" path={Card4} />
                       </div>
@@ -167,28 +174,32 @@ const Home: React.FC = () => {
       </div>
       <section className="h-auto px-5 mx-auto max-w-[1300px] lg:px-0 mt-20 lg:mt-40 md:min-h-[50vh]">
         <div className="grid gap-10 lg:gap-32  lg:grid-cols-2 grid-cols-1 flex-row-reverse md:flex-row  items-center justify-between h-auto">
-          <Fade left>
+          <Fade direction="left">
             <div className="col hidden  md:hidden lg:block">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="grid-cols-1 gap-4">
-                  <Fade bottom>
+                  <Fade direction="up">
+                    {" "}
                     <div className="  h-auto row-span-1 col-span-1">
                       <CardforImage path={Mission1} alt="" />
                     </div>
                   </Fade>
-                  <Fade bottom>
+                  <Fade direction="up">
+                    {" "}
                     <div className="  md:mt-5 h-auto row-span-2 col-span-1">
                       <CardforImage path={Mission2} alt="" />
                     </div>
                   </Fade>
                 </div>
                 <div>
-                  <Fade bottom>
+                  <Fade direction="up">
+                    {" "}
                     <div className="  h-auto row-span-2 col-span-1">
                       <CardforImage path={Mission3} alt="" />
                     </div>
                   </Fade>
-                  <Fade bottom>
+                  <Fade direction="up">
+                    {" "}
                     <div className=" md:mt-5 h-auto row-span-1 col-span-1">
                       <CardforImage path={Mission4} alt="" />
                     </div>
@@ -197,12 +208,14 @@ const Home: React.FC = () => {
               </div>
             </div>
           </Fade>
-          <Fade right>
+          <Fade direction="right">
             <div className="col  md:mt-0">
-              <Fade bottom>
+              <Fade direction="up">
+                {" "}
                 <PageTitle start title="Best of Paradise" />
               </Fade>
-              <Fade bottom>
+              <Fade direction="up">
+                {" "}
                 <div className="mt-5">
                   <Paragraph
                     start
@@ -212,28 +225,32 @@ const Home: React.FC = () => {
               </Fade>
             </div>
           </Fade>
-          <Fade left>
+          <Fade direction="left">
             <div className="lg:hidden md:block mt-5 md:mt-0">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="grid-cols-1 gap-4">
-                  <Fade bottom>
+                  <Fade direction="up">
+                    {" "}
                     <div className="  h-auto row-span-1 col-span-1">
                       <CardforImage path={Mission1} alt="" />
                     </div>
                   </Fade>
-                  <Fade bottom>
+                  <Fade direction="up">
+                    {" "}
                     <div className="  mt-5 h-auto row-span-2 col-span-1">
                       <CardforImage path={Mission2} alt="" />
                     </div>
                   </Fade>
                 </div>
                 <div>
-                  <Fade bottom>
+                  <Fade direction="up">
+                    {" "}
                     <div className="  h-auto row-span-2 col-span-1">
                       <CardforImage path={Mission3} alt="" />
                     </div>
                   </Fade>
-                  <Fade bottom>
+                  <Fade direction="up">
+                    {" "}
                     <div className=" mt-5 h-auto row-span-1 col-span-1">
                       <CardforImage path={Mission4} alt="" />
                     </div>
@@ -246,21 +263,24 @@ const Home: React.FC = () => {
       </section>
       <section className="min-h-[40vh] mt-20 px-5 mx-auto max-w-[1300px] lg:px-0 ">
         <div className="grid md:grid-cols-2 grid-cols-1 gap-10 items-start justify-between h-auto">
-          <Fade left>
+          <Fade direction="left">
             <div className="col bg-white bg-opacity-[0.1] rounded-[6px] border border-white border-opacity-[0.1] backdrop-filter backdrop-blur-[10px] pt-10">
-              <Fade bottom>
+              <Fade direction="up">
+                {" "}
                 <PageTitle start title="Our team is ready to help!" />
               </Fade>
-              <Fade bottom>
+              <Fade direction="up">
+                {" "}
                 <div className="mt-5">
                   <Paragraph start paragraph="You can call or whatsapp" />
                 </div>
               </Fade>
             </div>
           </Fade>
-          <Fade right>
+          <Fade direction="right">
             <div className="col">
-              <Fade bottom>
+              <Fade direction="up">
+                {" "}
                 <ContactForm />
               </Fade>
             </div>

@@ -9,11 +9,11 @@ import {
   footerOtherlinks,
 } from "@/constants";
 
-const Fade = require("react-reveal/Fade");
+import { Fade } from "react-awesome-reveal";
 
 export default function FooterMain() {
   return (
-    <Fade bottom>
+    <Fade direction="up">
       <div className="w-full bg-gray-700 mt-20 px-10">
         <div className="grid md:grid-cols-2 grid-cols-1 w-full py-8  mx-auto max-w-[1300px] ">
           <div className="" key={1}>

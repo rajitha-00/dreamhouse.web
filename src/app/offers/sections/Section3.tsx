@@ -8,20 +8,21 @@ import {
   TallCard,
 } from "@/components";
 
-const Fade = require("react-reveal/Fade");
-
+import { Fade } from "react-awesome-reveal";
 type Section3Props = {};
 
 export const Section3 = ({}: Section3Props): JSX.Element => {
   {
     return (
       <section className="h-auto min-h-[40vh] lg:mt-40  md:mt-20 mt-10 px-5 mx-auto max-w-[1300px] lg:px-0   ">
-        <Fade bottom>
+        <Fade direction="up">
+          {" "}
           <PageTitle title="Dreamhouse offer" />
         </Fade>
         <div className="grid md:grid-cols-1 lg:grid-cols-3 grid-cols-1 gap-5 mt-10 md:mt-20">
           <div className="grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4 items-center mx-ato">
-            <Fade bottom>
+            <Fade direction="up">
+              {" "}
               <div className=" col-span-1">
                 <TallCard
                   name="Bed & Breakfast"
@@ -31,7 +32,8 @@ export const Section3 = ({}: Section3Props): JSX.Element => {
             </Fade>
           </div>
           <div className="grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4 items-center mx-ato">
-            <Fade bottom>
+            <Fade direction="up">
+              {" "}
               <div className=" col-span-1">
                 <TallCard
                   name="Half Board"
@@ -41,7 +43,8 @@ export const Section3 = ({}: Section3Props): JSX.Element => {
             </Fade>
           </div>
           <div className="grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4 items-center mx-ato">
-            <Fade bottom>
+            <Fade direction="up">
+              {" "}
               <div className="col-span-1">
                 <TallCard
                   name="Full Board"
