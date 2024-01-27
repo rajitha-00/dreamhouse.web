@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  /* margin: 0;
+  padding: 0;
+  box-sizing: border-box; */
+}
+
+.glassCard {
+  border-radius: 6px;
+  border: 0.5px solid #fff;
+  background: rgba(249, 249, 249, 0.1);
+  backdrop-filter: blur(20px);
+}
+.section-background-bottom {
+  position: relative;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  overflow: hidden;
+  background-image: url(../assets/home/bottomMoon.svg);
+  background-size: cover;
+  height: 60vh;
+  background-repeat: no-repeat;
+}
+.sectionBackground-services {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  background-image: url(../assets/hero/heroBlue.svg);
+  background-size: cover;
+  height: 60vh;
+  background-repeat: no-repeat;
+}
+.sectionBackground-about {
+  position: absolute;
+  margin-top: 50px;
+  width: 60%;
+  overflow: hidden;
+  background-image: url(../assets/about/world-map.svg);
+  background-size: contain;
+  height: 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sectionBackground-hero {
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+  background-image: url(../assets/home/heroMain.png);
+  background-size: contain;
+  height: 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+}
+.selected {
+  /* Apply styles for the selected state */
+  border: 2px solid #3498db; /* Border color for selected state (optional) */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow for selected state (optional) */
+}
+
+.your-expanded-styles {
+  /* Apply styles for the expanded state */
+  border: 2px solid #2ecc71; /* Border color for expanded state (optional) */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); /* Box shadow for expanded state (optional) */
+}
+.your-existing-styles:hover {
+  /* Apply styles for the hover state */
+  background-color: #e74c3c; /* Hover background color (change to your desired color) */
+  cursor: pointer; /* Show pointer cursor on hover (optional) */
+}
