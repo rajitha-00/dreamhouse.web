@@ -28,7 +28,7 @@ export default function FooterMain() {
               />
             </Link>
             <p className="text-white font-poppins py-4">
-              We have the best people to solve <br /> the right problems in the
+              We have the best people to serve <br /> the right problems in the
               right way
             </p>
             {footerContacts.map((item) => (
