@@ -1,5 +1,4 @@
 "use client";
-import { FooterDivider, FooterLinkGroup } from "flowbite-react";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "../../../public/logoWhite.svg";
@@ -44,7 +43,7 @@ export default function FooterMain() {
           <div className="grid md:grid-cols-3 grid-cols-1 gap-8 sm:mt-4 sm:gap-6 pt-16">
             <div>
               <p className="text-[#49C0B6] font-poppins font-[600] ">Company</p>
-              <FooterLinkGroup col>
+              <div>
                 {footerCompany.map((item) => (
                   <div key={item.key} className="py-1">
                     <Link
@@ -55,13 +54,13 @@ export default function FooterMain() {
                     </Link>
                   </div>
                 ))}
-              </FooterLinkGroup>
+              </div>
             </div>
             <div>
               <p className="text-[#49C0B6] font-poppins font-[600] ">
                 Other links
               </p>
-              <FooterLinkGroup col>
+              <div>
                 {footerOtherlinks.map((item) => (
                   <div key={item.key} className="py-1">
                     <Link
@@ -72,7 +71,7 @@ export default function FooterMain() {
                     </Link>
                   </div>
                 ))}
-              </FooterLinkGroup>
+              </div>
             </div>
             <div>
               <p className="text-[#49C0B6] font-poppins font-[600] ">
@@ -103,7 +102,6 @@ export default function FooterMain() {
             </div>
           </div>
         </div>
-        <FooterDivider />
         <div className="w-full mt-1 flex items-center justify-center">
           <Link
             href="#"

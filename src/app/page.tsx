@@ -30,16 +30,6 @@ const Home: React.FC = () => {
           name="keywords"
           content="Dream House, technology, IT solutions, consulting, innovation"
         />
-        <meta property="og:title" content="Dream House - We specialize in" />
-        <meta
-          property="og:description"
-          content="Unleash Unparalleled Efficiency: Tailored IT Solutions for Every Business."
-        />
-        <meta
-          property="og:image"
-          content="URL to your featured image for social sharing"
-        />
-        <meta property="og:url" content="URL to your home page" />
       </Head>
       <div className="heroContainer px-5 mx-auto max-w-[1300px] lg:px-0  sm:min-h-[80vh] md:min-h-[50vh] md:h-auto lg:min-h-[90vh] items-center flex  ">
         <div className="grid md:grid-cols-5 grid-cols-1 items-center h-[100%]">
