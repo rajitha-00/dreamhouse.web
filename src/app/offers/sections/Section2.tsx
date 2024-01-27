@@ -25,11 +25,10 @@ export const Section2 = ({}: Section2Props): JSX.Element => {
           <PageTitle title="Dreamhouse packages" />
         </Fade>
         <div className="grid grid-cols-1 gap-4 mx-auto mt-10 md:mt-20">
-          {jobs.map((item, index) => (
-            <Fade bottom>
-              <div key={index} className="featureTile ">
+          {jobs.map((item) => (
+            <div key={item.key} className="featureTile ">
+              <Fade bottom>
                 <JobCard
-                  index={item.index}
                   description={item.description}
                   occupancy={item.occupancy}
                   size={item.size}
@@ -39,8 +38,8 @@ export const Section2 = ({}: Section2Props): JSX.Element => {
                   name={item.name}
                   hasApply
                 />
-              </div>
-            </Fade>
+              </Fade>
+            </div>
           ))}
         </div>
       </section>

@@ -12,7 +12,6 @@ type JobCardProps = {
   description: string;
   occupancy: string;
   hasApply?: boolean;
-  index: number;
 };
 
 export const JobCard = ({
@@ -23,7 +22,6 @@ export const JobCard = ({
   hasApply,
   occupancy,
   description,
-  index,
   view,
 }: JobCardProps): JSX.Element => {
   return (

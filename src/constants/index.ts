@@ -56,7 +56,7 @@ export const footerContacts = [
 
 export const jobs = [
   {
-    index: 1,
+    key: 1,
     name: "SUPERIOR ROOM",
     occupancy: "2 adults and 1 child",
     size: "25 sqm",
@@ -67,7 +67,7 @@ export const jobs = [
     alt: "SUPERIOR ROOM",
   },
   {
-    index: 2,
+    key: 2,
     name: "DELUXE ROOM",
     size: "25 sqm",
     description:
@@ -78,7 +78,7 @@ export const jobs = [
     alt: "DELUXE ROOM",
   },
   {
-    index: 3,
+    key: 3,
     name: "KING SUITE",
     size: "25 sqm",
     description:
@@ -89,7 +89,7 @@ export const jobs = [
     alt: "KING SUITE",
   },
   {
-    index: 4,
+    key: 4,
     name: "FAMILY SUITE",
     size: "25 sqm",
     description:
