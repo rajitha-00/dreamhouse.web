@@ -35,19 +35,19 @@ export default function RootLayout({
         {/* Add other meta tags as needed */}
       </Head>
       <body>
-        <ThemeProvider
+        {/* <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          <Header />
-          <div className="bg-white overflow-hidden dark:bg-[#2F343F] md:mt-16 ">
-            <div className={poppins.variable}>{children}</div>
-          </div>
-          <ScrollToTopButton />
-          <FooterMain />
-        </ThemeProvider>
+        </ThemeProvider> */}
+        <Header />
+        <div className="bg-white overflow-hidden dark:bg-[#2F343F] md:mt-16 ">
+          <div className={poppins.variable}>{children}</div>
+        </div>
+        <ScrollToTopButton />
+        <FooterMain />
       </body>
     </html>
   );

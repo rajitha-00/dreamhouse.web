@@ -32,19 +32,18 @@ const Home: React.FC = () => {
       </Head>
       <div className="heroContainer px-5 mx-auto max-w-[1300px] lg:px-0  sm:min-h-[80vh] md:min-h-[50vh] md:h-auto lg:min-h-[90vh] items-center flex  ">
         <div className="grid md:grid-cols-5 grid-cols-1 items-center h-[100%]">
-          <Fade direction="up">
-            {" "}
-            <div className="block md:hidden col-span-2 relative">
+          <div className="block md:hidden col-span-2 relative">
+            <Fade direction="up">
+              {" "}
               <Image
                 src={HeroImage}
                 alt=""
                 className="w-full absolute scale-150 top-[40px] right-[20px] "
               />
-            </div>
-          </Fade>
-          <Fade direction="up">
-            {" "}
-            <div className="col-span-3 block md:hidden mt-96">
+            </Fade>
+          </div>{" "}
+          <div className="col-span-3 block md:hidden mt-96">
+            <Fade direction="up">
               <h1
                 className="heroTitle font-poppins font-[600] text-4xl text-start md:text-start md:text-4xl  text-primaryColor "
                 style={{ lineHeight: "1.2" }}
@@ -70,10 +69,10 @@ const Home: React.FC = () => {
               <div className="justify-start md:justify-start flex items-center md:items-start">
                 <PrimaryButton url="/contact" hasArrow name={"See offers"} />
               </div>
-            </div>
-          </Fade>
-          <Fade direction="left">
-            <div className="col-span-2 hidden md:block mt-20 md:mt-0">
+            </Fade>
+          </div>
+          <div className="col-span-2 hidden md:block mt-20 md:mt-0">
+            <Fade direction="left">
               <h1
                 className="heroTitle font-poppins font-[600] text-3xl text-center md:text-start md:text-4xl lg:text-6xl text-primaryColor pt-10"
                 style={{ lineHeight: "1.2" }}
@@ -104,13 +103,13 @@ const Home: React.FC = () => {
               <div className="justify-center md:justify-start flex items-center md:items-start">
                 <PrimaryButton url="/contact" hasArrow name={"See offers"} />
               </div>
-            </div>
-          </Fade>
-          <Fade direction="right">
-            <div className="mt-10 hidden md:block md:mt-0 col-span-3 md:pl-20">
-              <Image src={HeroImage} alt="" className="w-full  " />
-            </div>
-          </Fade>
+            </Fade>
+          </div>
+          <div className="mt-10 hidden md:block md:mt-0 col-span-3 md:pl-20">
+            <Fade direction="right">
+              <Image src={HeroImage} alt="" className="w-full scale " />
+            </Fade>
+          </div>
         </div>
       </div>
 
@@ -140,7 +139,7 @@ const Home: React.FC = () => {
                   <div className="grid-cols-1 md:gap-4">
                     <Fade direction="up">
                       {" "}
-                      <div className="  h-auto  col-span-1">
+                      <div className="  h-auto rounded  col-span-1 ">
                         <CardforImage alt="" path={Card1} />
                       </div>
                     </Fade>
