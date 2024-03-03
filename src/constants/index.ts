@@ -12,6 +12,7 @@ export const navigation = [
     name: "Get Directions",
     href: "https://www.google.com/maps/dir//Temple+of+the+Tooth+Museum,+Kandy/@7.2935442,80.6003109,13z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x3ae3662dc9c94c75:0xe1885fe2929d358!2m2!1d80.6415106!2d7.2934609!3e2?entry=ttu",
   },
+  { index: 4, name: "Contact Us", href: "/contact" },
 ];
 
 export const aboutHero = [
@@ -25,7 +26,8 @@ export const aboutHero = [
 export const footerCompany = [
   { key: 1, name: "Home", path: "/" },
   { key: 2, name: "Offers", path: "/offers" },
-  { key: 3, name: "Get Directions", path: "" },
+  { key: 3, name: "About Us", path: "/about" },
+  { key: 4, name: "Contact Us", path: "/contact" },
 ];
 
 export const footerOtherlinks = [
