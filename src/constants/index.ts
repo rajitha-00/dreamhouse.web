@@ -1,4 +1,13 @@
-import Job from "../assets/home/offersImage.svg";
+import R1 from "../assets/home/Rooms/r1.svg";
+import R2 from "../assets/home/Rooms/r2.svg";
+import R3 from "../assets/home/Rooms/r3.svg";
+import R4 from "../assets/home/Rooms/r4.svg";
+
+import RR1 from "../assets/home/Rooms/rr1.svg";
+import RR2 from "../assets/home/Rooms/rr2.svg";
+import RR3 from "../assets/home/Rooms/rr3.svg";
+import RR4 from "../assets/home/Rooms/rr4.svg";
+
 import Fb from "../assets/contact/facebook.svg";
 import X from "../assets/contact/X.svg";
 import Insta from "../assets/contact/insta.svg";
@@ -18,7 +27,7 @@ export const navigation = [
 export const aboutHero = [
   {
     key: 1,
-    title: "Enjoy,  ",
+    title: "Exclusive Offer,  ",
     subTitle: "With pleasure form hanthana",
   },
 ];
@@ -58,46 +67,56 @@ export const footerContacts = [
 export const jobs = [
   {
     key: 1,
-    name: "SUPERIOR ROOM",
+    name: "DELUXE ROOM  $ 55 ",
     occupancy: "2 adults and 1 child",
-    size: "25 sqm",
-    description:
-      "Sweeping views of the majestic Hanthana mountains greet you as soon as you enter the Suite. Equipped with a panoramic seating area, and dining area our Suites are ideal for couples that yearn that extra privacy and indulgence.",
-    view: "with Hanthana mountain views",
-    path: Job,
+    size: "Hot water",
+    description: "$ 55 Per Night",
+    view: " AC",
+    viewpoint: "Knuckles mountain range",
+    balcony: "Amaizing balcony",
+    tea: "Morning tea",
+    wifi: "Free wifi",
+    path1: R1,
+    path2: R2,
+    path3: R3,
+    path4: R4,
     alt: "SUPERIOR ROOM",
   },
   {
     key: 2,
-    name: "DELUXE ROOM",
-    size: "25 sqm",
-    description:
-      "Sweeping views of the majestic Hanthana mountains greet you as soon as you enter the Suite. Equipped with a panoramic seating area, and dining area our Suites are ideal for couples that yearn that extra privacy and indulgence.",
+    name: "SUPERIOR ROOM  $ 33",
+    size: "Hot water",
+    description: "$ 33 Per Night",
     occupancy: "2 adults and 1 child",
-    view: "with Hanthana mountain views",
-    path: Job,
+    view: "Non - AC (Fans Included)",
+    tea: "Morning tea",
+    wifi: "Free wifi",
+    path1: RR1,
+    path2: RR2,
+    path3: RR3,
+    path4: RR4,
     alt: "DELUXE ROOM",
   },
-  {
-    key: 3,
-    name: "KING SUITE",
-    size: "25 sqm",
-    description:
-      "Sweeping views of the majestic Hanthana mountains greet you as soon as you enter the Suite. Equipped with a panoramic seating area, and dining area our Suites are ideal for couples that yearn that extra privacy and indulgence.",
-    occupancy: "2 adults and 1 child",
-    view: "with mountain views",
-    path: Job,
-    alt: "KING SUITE",
-  },
-  {
-    key: 4,
-    name: "FAMILY SUITE",
-    size: "25 sqm",
-    description:
-      "Sweeping views of the majestic Hanthana mountains greet you as soon as you enter the Suite. Equipped with a panoramic seating area, and dining area our Suites are ideal for couples that yearn that extra privacy and indulgence.",
-    occupancy: "2 adults and 1 child",
-    view: "with mountain views",
-    path: Job,
-    alt: "FAMILY SUITE",
-  },
+  // {
+  //   key: 3,
+  //   name: "KING SUITE",
+  //   size: "25 sqm",
+  //   description:
+  //     "Sweeping views of the majestic Hanthana mountains greet you as soon as you enter the Suite. Equipped with a panoramic seating area, and dining area our Suites are ideal for couples that yearn that extra privacy and indulgence.",
+  //   occupancy: "2 adults and 1 child",
+  //   view: "with mountain views",
+  //   path: Job,
+  //   alt: "KING SUITE",
+  // },
+  // {
+  //   key: 4,
+  //   name: "FAMILY SUITE",
+  //   size: "25 sqm",
+  //   description:
+  //     "Sweeping views of the majestic Hanthana mountains greet you as soon as you enter the Suite. Equipped with a panoramic seating area, and dining area our Suites are ideal for couples that yearn that extra privacy and indulgence.",
+  //   occupancy: "2 adults and 1 child",
+  //   view: "with mountain views",
+  //   path: Job,
+  //   alt: "FAMILY SUITE",
+  // },
 ];

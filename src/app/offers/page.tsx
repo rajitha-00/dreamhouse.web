@@ -3,15 +3,13 @@ import React from "react";
 import Head from "next/head";
 import { Metadata } from "next";
 import { aboutHero } from "@/constants";
-import { Section1 } from "./sections/Section1";
 import { Section2 } from "./sections/Section2";
-import { Section3 } from "./sections/Section3";
 export const metadata: Metadata = {
   title: "Offers",
 };
 const Offers: React.FC = () => {
   return (
-    <div className="px-5 mx-auto max-w-[1300px] lg:px-0 ">
+    <div className="px-5 mx-auto max-w-[1500px] lg:px-0 ">
       <Head>
         <title>Dreamhouse - Offers Us</title>
         <meta
@@ -43,9 +41,9 @@ const Offers: React.FC = () => {
           title={item.title}
         />
       ))}
-      <Section1 />
+      {/* <Section1 /> */}
       <Section2 />
-      <Section3 />
+      {/* <Section3 /> */}
     </div>
   );
 };
