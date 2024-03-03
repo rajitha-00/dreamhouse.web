@@ -3,7 +3,13 @@ import { PrimaryButton } from "@/components/Buttons/PrimaryButton/PrimaryButton"
 import Image from "next/image";
 import React from "react";
 import HeroImage from "../assets/hero/hero.svg";
-import { CardforImage, PageTitle, Paragraph } from "@/components";
+import {
+  CardforImage,
+  Cardimage,
+  LongCard,
+  PageTitle,
+  Paragraph,
+} from "@/components";
 import Card1 from "../assets/home/hometop/1.svg";
 import Card2 from "../assets/home/hometop/3.svg";
 import Card3 from "../assets/home/hometop/2.svg";
@@ -12,6 +18,11 @@ import Mission1 from "../assets/home/bestofkandy/1.svg";
 import Mission2 from "../assets/home/bestofkandy/2.svg";
 import Mission3 from "../assets/home/bestofkandy/3.svg";
 import Mission4 from "../assets/home/bestofkandy/4.svg";
+import Card6 from "../assets/home/kandy/maligawa.svg";
+import Card5 from "../assets/home/kandy/birds.svg";
+import Card7 from "../assets/home/kandy/garden.svg";
+import Card8 from "../assets/home/kandy/mahameunawa.svg";
+import Card9 from "../assets/home/kandy/polgolla.svg";
 import Head from "next/head";
 import { ContactForm } from "@/components/Forms/ContactForm/ContactForm";
 
@@ -416,7 +427,91 @@ const Home: React.FC = () => {
           </Fade>
         </div>
       </section>
-      <section className="min-h-[40vh] mt-20 px-5 mx-auto max-w-[1500px] lg:px-0 ">
+      <section className="h-auto md:min-h-[90vh] lg:mt-40  md:mt-20 mt-10 px-5 mx-auto max-w-[1500px] lg:px-0   ">
+        <div className="grid  md:grid-cols-12 grid-cols-1 gap-10 mt-10 md:mt-20">
+          <div className="col-span-8  ">
+            <Fade triggerOnce direction="up">
+              {" "}
+              <div className="">
+                <LongCard
+                  alt=""
+                  path={Card6}
+                  description=""
+                  key={1}
+                  name="Sri Dalada Maligawa | The Temple of the Sacred Tooth Relic"
+                  byCar
+                  car="5.5 km by vehicle from Temple of tooth"
+                  byFoot
+                  foot="1.4 km by foot from Temple of tooth"
+                />
+              </div>
+            </Fade>
+          </div>
+          <div className="col-span-4 grid-rows-2 ">
+            <Fade triggerOnce direction="up">
+              <div className=" ">
+                <Cardimage
+                  alt=""
+                  path={Card5}
+                  description=""
+                  key={1}
+                  name="Hanthana International Bird park & Recreation"
+                  byCar
+                  car="8.1 km by vehicle from Hanthana International Bird park & Recreation"
+                />
+              </div>
+            </Fade>
+          </div>
+        </div>
+        <div className="grid md:grid-cols-12 grid-cols-1 gap-10 mt-10 md:mt-10">
+          <div className="col-span-4">
+            <Fade triggerOnce direction="up">
+              <div className="">
+                <Cardimage
+                  alt=""
+                  path={Card7}
+                  description=""
+                  key={1}
+                  name="Peradeniya Royal Botanical Garden"
+                  byCar
+                  car="9.9 km by vehicle from Peradeniya Royal Botanical Garden"
+                />
+              </div>
+            </Fade>
+          </div>
+          <div className="col-span-4">
+            <Fade triggerOnce direction="up">
+              <div className="">
+                <Cardimage
+                  alt=""
+                  path={Card8}
+                  description=""
+                  key={1}
+                  name="Mahamevna Buddhist Monetary"
+                  byCar
+                  car="10.6 km by vehicle from Mahamevna Buddhist Monetary"
+                />
+              </div>
+            </Fade>
+          </div>
+          <div className="col-span-4">
+            <Fade triggerOnce direction="up">
+              <div className="">
+                <Cardimage
+                  alt=""
+                  path={Card9}
+                  description=""
+                  key={1}
+                  name="Polgolla Dam"
+                  byCar
+                  car="4 km by vehicle from Polgolla Dam"
+                />
+              </div>
+            </Fade>
+          </div>
+        </div>
+      </section>
+      {/* <section className="min-h-[40vh] mt-20 px-5 mx-auto max-w-[1500px] lg:px-0 ">
         <div className="grid md:grid-cols-2 grid-cols-1 gap-10 items-start justify-between h-auto">
           <Fade triggerOnce direction="left">
             <div className="col bg-white bg-opacity-[0.1] rounded-[6px] border border-white border-opacity-[0.1] backdrop-filter backdrop-blur-[10px] pt-10">
@@ -441,7 +536,7 @@ const Home: React.FC = () => {
             </div>
           </Fade>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };
