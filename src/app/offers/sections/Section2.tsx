@@ -20,14 +20,14 @@ export const Section2 = ({}: Section2Props): JSX.Element => {
   {
     return (
       <section className="min-h-[60vh] justify-center mt-20 lg:mt-40 items-center mx-auto max-w-[1300px] lg:px-0  ">
-        <Fade direction="up">
+        <Fade triggerOnce direction="up">
           {" "}
           <PageTitle title="Dreamhouse packages" />
         </Fade>
         <div className="grid grid-cols-1 gap-4 mx-auto mt-10 md:mt-20">
           {jobs.map((item) => (
             <div key={item.key} className="featureTile ">
-              <Fade direction="up">
+              <Fade triggerOnce direction="up">
                 {" "}
                 <JobCard
                   description={item.description}

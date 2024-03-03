@@ -14,13 +14,13 @@ export const CardforImage = ({
   key,
 }: CardforImageProps): JSX.Element => {
   return (
-    <div className="min-h-[200px] rounded-[6px] flex flex-col ">
+    <div className="min-h-[200px] flex flex-col ">
       <Image
-        className=" w-auto h-auto justify-center relative z-10 rounded-[6px]"
+        className=" w-auto h-auto justify-center relative z-10 "
         src={path}
         alt={alt}
-        width={70}
-        height={50}
+        // width={70}
+        // height={50}
       />
     </div>
   );

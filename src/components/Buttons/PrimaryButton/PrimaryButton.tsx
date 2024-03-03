@@ -14,7 +14,7 @@ export const PrimaryButton = ({
 }: PrimaryButtonProps): JSX.Element => {
   return (
     <Link href={url}>
-      <button className="inline-flex items-center mt-6 flex-none rounded-md px-3 py-2 text-lg font-poppins bg-gradient-to-r from-[#dfa579] via-[#c79081]  to-[#dfa594] hover:bg-gradient-to-br">
+      <button className="inline-flex items-center mt-6 flex-none rounded-md px-3 py-2 text-white text-lg font-poppins bg-DreamhouseColor">
         {name}
         {hasArrow && (
           <ArrowRightIcon

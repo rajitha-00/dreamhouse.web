@@ -17,10 +17,10 @@ export const ImageRightSection = ({
   title,
 }: ImageRightSectionProps): JSX.Element => {
   return (
-    <Fade direction="up">
+    <Fade triggerOnce direction="up">
       {" "}
       <div className="grid md:grid-cols-5 gap-10 md:gap-32 items-center justify-between h-full">
-        <Fade direction="up">
+        <Fade triggerOnce direction="up">
           {" "}
           <div className="col-span-1 block md:hidden md:col-span-2">
             <Image
@@ -32,19 +32,19 @@ export const ImageRightSection = ({
             />
           </div>
         </Fade>
-        <Fade direction="left">
+        <Fade triggerOnce direction="left">
           <div className="col-span-1 md:col-span-3">
-            <Fade direction="up">
+            <Fade triggerOnce direction="up">
               {" "}
               <PageTitle start title={title} />
             </Fade>
-            <Fade direction="up">
+            <Fade triggerOnce direction="up">
               {" "}
               <div className="mt-5">
                 <SubTitle start subTitle={subTitle} />
               </div>
             </Fade>
-            <Fade direction="up">
+            <Fade triggerOnce direction="up">
               {" "}
               <div className="mt-5">
                 <Paragraph start paragraph={description} />
@@ -52,7 +52,7 @@ export const ImageRightSection = ({
             </Fade>
           </div>
         </Fade>
-        <Fade direction="right">
+        <Fade triggerOnce direction="right">
           <div className="col-span-1 hidden md:block md:col-span-2">
             <Image
               className="h-auto w-[500px] md:w-[600px] md:rounded-[60px] mx-auto"

@@ -18,7 +18,7 @@ export const HeroSection = ({
       <div className="heroContainer mx-auto max-w-[1400px] items-center flex min-h-[80vh] md:min-h-[40vh] lg:min-h-[95vh]  lg:px-0">
         <div className="grid  md:grid-cols-5 gap-20 grid-cols-1 items-center h-[100%]">
           <div className="mt-20 md:mt-0 block md:hidden col-span-2">
-            <Fade direction="up">
+            <Fade triggerOnce direction="up">
               <Image
                 src={HeroImage}
                 alt=""
@@ -27,8 +27,8 @@ export const HeroSection = ({
             </Fade>
           </div>
           <div className="col-span-3 block md:hidden mt-10 md:mt-0">
-            <Fade direction="up">
-              <Fade direction="up">
+            <Fade triggerOnce direction="up">
+              <Fade triggerOnce direction="up">
                 <h1
                   className="heroTitle font-poppins text-start md:text-start font-[600] text-3xl md:text-5xl lg:text-6xl text-primaryColor"
                   style={{ lineHeight: "1.2" }}
@@ -36,7 +36,7 @@ export const HeroSection = ({
                   {title}
                 </h1>
               </Fade>
-              <Fade direction="up">
+              <Fade triggerOnce direction="up">
                 <h2
                   className="heroSubTitle text-xl text-start md:text-start font-[600]  md:text-2xl lg:text-3xl md:pt-6 font-poppins"
                   style={{
@@ -53,8 +53,8 @@ export const HeroSection = ({
             </Fade>
           </div>
           <div className="col-span-2 hidden md:block md:mt-0">
-            <Fade direction="left">
-              <Fade direction="up">
+            <Fade triggerOnce direction="left">
+              <Fade triggerOnce direction="up">
                 <h1
                   className="heroTitle font-poppins text-center md:text-start font-[600] text-3xl md:text-5xl lg:text-6xl text-primaryColor"
                   style={{ lineHeight: "1.2" }}
@@ -62,7 +62,7 @@ export const HeroSection = ({
                   {title}
                 </h1>
               </Fade>
-              <Fade direction="up">
+              <Fade triggerOnce direction="up">
                 <h2
                   className="heroSubTitle text-xl text-center md:text-start font-[600]  md:text-2xl lg:text-3xl md:pt-6 font-poppins"
                   style={{
@@ -79,7 +79,7 @@ export const HeroSection = ({
             </Fade>
           </div>
           <div className="hidden md:block col-span-3">
-            <Fade direction="right">
+            <Fade triggerOnce direction="right">
               <Image
                 src={HeroImage}
                 alt=""

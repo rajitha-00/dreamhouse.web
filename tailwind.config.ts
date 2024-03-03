@@ -25,9 +25,9 @@ const config: Config = {
         poppins: ["var(--poppins)"],
       },
       colors: {
-        primaryColor: "#413a3a",
+        primaryColor: "#1B1A55",
         textColorLight: "#445570",
-        DreamhouseColor: "#413a3a",
+        DreamhouseColor: "#323346",
       },
     },
   },

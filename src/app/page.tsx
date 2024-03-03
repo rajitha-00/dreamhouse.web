@@ -4,14 +4,14 @@ import Image from "next/image";
 import React from "react";
 import HeroImage from "../assets/hero/hero.svg";
 import { CardforImage, PageTitle, Paragraph } from "@/components";
-import Card1 from "../assets/svg/home/hanthana.svg";
-import Card2 from "../assets/svg/home/lobbbyNight.svg";
-import Card3 from "../assets/svg/home/balcony.svg";
-import Card4 from "../assets/svg/home/topview.svg";
-import Mission1 from "../assets/svg/home/Frame 1359.svg";
-import Mission2 from "../assets/svg/home/bathroom.svg";
-import Mission3 from "../assets/svg/home/terrace.svg";
-import Mission4 from "../assets/svg/home/lobby.svg";
+import Card1 from "../assets/home/hometop/1.svg";
+import Card2 from "../assets/home/hometop/3.svg";
+import Card3 from "../assets/home/hometop/2.svg";
+import Card4 from "../assets/home/hometop/4.svg";
+import Mission1 from "../assets/home/bestofkandy/1.svg";
+import Mission2 from "../assets/home/bestofkandy/2.svg";
+import Mission3 from "../assets/home/bestofkandy/3.svg";
+import Mission4 from "../assets/home/bestofkandy/4.svg";
 import Head from "next/head";
 import { ContactForm } from "@/components/Forms/ContactForm/ContactForm";
 
@@ -30,99 +30,209 @@ const Home: React.FC = () => {
           content="Dream House, technology, IT solutions, consulting, innovation"
         />
       </Head>
-      <div className="heroContainer px-5 mx-auto max-w-[1300px] lg:px-0  sm:min-h-[80vh] md:min-h-[50vh] md:h-auto lg:min-h-[90vh] items-center flex  ">
+      <div className="heroContainer px-5 mx-auto max-w-[1500px] lg:px-0  sm:min-h-[80vh] md:min-h-[50vh] md:h-auto lg:min-h-[90vh] items-center flex  ">
         <div className="grid md:grid-cols-5 grid-cols-1 items-center h-[100%]">
-          <div className="block md:hidden col-span-2 relative">
-            <Fade direction="up">
+          <div className="mt-10 md:hidden md:mt-0 col-span-3 md:pl-20">
+            <Fade triggerOnce direction="right">
               {" "}
-              <Image
-                src={HeroImage}
-                alt=""
-                className="w-full absolute scale-150 top-[40px] right-[20px] "
-              />
+              <div className="col mt-5 md:mt-0">
+                <div className="grid grid-cols-1  md:grid-cols-2 gap-4">
+                  <div>
+                    <Fade triggerOnce direction="up">
+                      {" "}
+                      <div className="rounded-tl-[80px] rounded-bl-[80px]   col-span-1">
+                        <Image
+                          className=" w-auto justify-center relative rounded-tr-[170px] rounded-bl-[150px] rounded-br-[150px] z-10 "
+                          src={Card1}
+                          alt={""}
+                          width={90}
+                          height={50}
+                        />
+                      </div>
+                    </Fade>
+                    <Fade triggerOnce direction="up">
+                      {" "}
+                      <div className="mt-2   ">
+                        <Image
+                          className=" w-auto justify-center relative rounded-tl-[100px]  rounded-tr-[100px] rounded-bl-[100px] rounded-br-[100px] z-10 "
+                          src={Card2}
+                          alt={""}
+                          width={90}
+                          height={50}
+                        />
+                      </div>
+                    </Fade>
+                  </div>
+                  <div>
+                    <Fade triggerOnce direction="up">
+                      {" "}
+                      <div className="">
+                        <Image
+                          className=" w-auto justify-center relative rounded-tl-[100px]  rounded-tr-[100px] rounded-bl-[100px] rounded-br-[100px] z-10 "
+                          src={Card3}
+                          alt={""}
+                          width={90}
+                          height={50}
+                        />
+                      </div>
+                    </Fade>
+
+                    <Fade triggerOnce direction="up">
+                      {" "}
+                      <div className=" mt-5  ">
+                        <Image
+                          className=" w-auto justify-center relative rounded-tl-[170px]  rounded-tr-[170px]  rounded-bl-[170px] z-10 "
+                          src={Card4}
+                          alt={""}
+                          width={90}
+                          height={50}
+                        />{" "}
+                      </div>
+                    </Fade>
+                  </div>
+                </div>
+              </div>
             </Fade>
+          </div>
+          <div className="block md:hidden col-span-2 relative">
+            <Fade triggerOnce direction="left"></Fade>
           </div>{" "}
-          <div className="col-span-3 block md:hidden mt-96">
-            <Fade direction="up">
+          <div className="col-span-3 block md:hidden ">
+            <Fade triggerOnce direction="up">
               <h1
-                className="heroTitle font-poppins font-[600] text-4xl text-start md:text-start md:text-4xl  text-primaryColor "
+                className="heroTitle font-poppins font-[600] text-3xl text-start md:text-start md:text-4xl lg:text-6xl text-DreamhouseColor pt-10"
                 style={{ lineHeight: "1.2" }}
               >
-                Dreamhouse villa
+                Dream House Residence{" "}
               </h1>
-
-              <h2
-                className="heroSubTitle text-2xl text-start font-[600] md:text-start md:text-2xl lg:text-3xl pt-6 font-poppins"
-                style={{
-                  background:
-                    "linear-gradient(90deg, #868f96 -31.38%, #596164 132.45%)",
-                  WebkitBackgroundClip: "text",
-                  backgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                }}
-              >
-                When the mountains are calling, Hanthana is like nothing on
-                earth. Our Resort is situated at the front door of this majestic
-                range, steeped in pioneering spirit, a refined cultural touch,
-                and legendary Sri Lankan hospitality.
-              </h2>
+              <Paragraph
+                paragraph="Welcome to our enchanting retreat in Kandy, where the whispering
+                palms and rustling leaves compose a symphony of tranquility.
+                Nestled amidst the lush embrace of nature, our rest house
+                beckons you to unwind in a haven of serenity. Immerse yourself
+                in the rich tapestry of Kandy's cultural heritage, while our
+                sanctuary offers a blend of modern comfort and traditional
+                charm. Each corner unveils a story, and every sunset paints the
+                sky in hues of warmth, creating an unforgettable canvas for your
+                escape. Welcome to a sanctuary where time takes a leisurely
+                stroll, and every moment is a cherished memory waiting to
+                unfold."
+              />
               <div className="justify-start md:justify-start flex items-center md:items-start">
-                <PrimaryButton url="/contact" hasArrow name={"See offers"} />
+                <PrimaryButton url="/contact" hasArrow name={"Explore"} />
               </div>
             </Fade>
           </div>
           <div className="col-span-2 hidden md:block mt-20 md:mt-0">
-            <Fade direction="left">
+            <Fade triggerOnce direction="left">
               <h1
-                className="heroTitle font-poppins font-[600] text-3xl text-center md:text-start md:text-4xl lg:text-6xl text-primaryColor pt-10"
+                className="heroTitle font-poppins font-[600] text-3xl text-center md:text-start md:text-4xl lg:text-6xl text-DreamhouseColor pt-10"
                 style={{ lineHeight: "1.2" }}
               >
-                Welcome to{" "}
+                Dream House{" "}
               </h1>
               <h1
-                className="heroTitle font-poppins font-[600] text-3xl text-center md:text-start md:text-4xl lg:text-6xl text-primaryColor "
+                className="heroTitle font-poppins font-[600] text-3xl text-center md:text-start md:text-4xl lg:text-6xl text-DreamhouseColor "
                 style={{ lineHeight: "1.2" }}
               >
-                Dreamhouse{" "}
+                Residence{" "}
               </h1>
-              <h2
-                className="heroSubTitle text-sm text-center font-[400] md:text-justify md:text-lg lg:text-xl pt-6 font-poppins"
-                style={{
-                  background:
-                    "linear-gradient(90deg, #868f96 -31.38%, #596164 132.45%)",
-                  WebkitBackgroundClip: "text",
-                  backgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                }}
-              >
-                When the mountains are calling, Hanthana is like nothing on
-                earth. Our Resort is situated at the front door of this majestic
-                range, steeped in pioneering spirit, a refined cultural touch,
-                and legendary Sri Lankan hospitality.
-              </h2>
+              <Paragraph
+                start
+                paragraph="Welcome to our enchanting retreat in Kandy, where the whispering
+                palms and rustling leaves compose a symphony of tranquility.
+                Nestled amidst the lush embrace of nature, our rest house
+                beckons you to unwind in a haven of serenity. Immerse yourself
+                in the rich tapestry of Kandy's cultural heritage, while our
+                sanctuary offers a blend of modern comfort and traditional
+                charm. Each corner unveils a story, and every sunset paints the
+                sky in hues of warmth, creating an unforgettable canvas for your
+                escape. Welcome to a sanctuary where time takes a leisurely
+                stroll, and every moment is a cherished memory waiting to
+                unfold."
+              />
               <div className="justify-center md:justify-start flex items-center md:items-start">
-                <PrimaryButton url="/contact" hasArrow name={"See offers"} />
+                <PrimaryButton url="/contact" hasArrow name={"Explore"} />
               </div>
             </Fade>
           </div>
           <div className="mt-10 hidden md:block md:mt-0 col-span-3 md:pl-20">
-            <Fade direction="right">
-              <Image src={HeroImage} alt="" className="w-full scale " />
+            <Fade triggerOnce direction="right">
+              {" "}
+              <div className="col mt-5 md:mt-0">
+                <div className="grid grid-cols-1  md:grid-cols-12 gap-4 justify-center items-center">
+                  <div className="col-span-7">
+                    <Fade triggerOnce direction="up">
+                      {" "}
+                      <div className="   col-span-1">
+                        <div className="rounded-[80px] relative">
+                          <Image
+                            className=" w-auto justify-center relative rounded-tr-[80px] rounded-bl-[80px] z-10 "
+                            src={Card1}
+                            alt={""}
+                            width={90}
+                            height={50}
+                          />
+                        </div>
+                      </div>
+                    </Fade>
+                    <Fade triggerOnce direction="up">
+                      {" "}
+                      <div className="mt-2   ">
+                        <Image
+                          className=" w-auto justify-center relative rounded-tl-[80px] rounded-br-[80px] z-10 "
+                          src={Card2}
+                          alt={""}
+                          width={70}
+                          height={50}
+                        />
+                      </div>
+                    </Fade>
+                  </div>
+                  <div className="justify-center items-center col-span-5">
+                    <Fade triggerOnce direction="up">
+                      {" "}
+                      <div className="">
+                        <Image
+                          className=" w-auto justify-center relative rounded-tl-[80px] rounded-br-[80px] z-10 "
+                          src={Card3}
+                          alt={""}
+                          width={70}
+                          height={50}
+                        />
+                      </div>
+                    </Fade>
+
+                    <Fade triggerOnce direction="up">
+                      {" "}
+                      <div className=" mt-2  ">
+                        <Image
+                          className=" w-auto justify-center relative rounded-tr-[80px] rounded-bl-[80px] z-10 "
+                          src={Card4}
+                          alt={""}
+                          width={70}
+                          height={50}
+                        />
+                      </div>
+                    </Fade>
+                  </div>
+                </div>
+              </div>
             </Fade>
           </div>
         </div>
       </div>
 
-      <div>
+      {/* <div>
         <section className="h-auto mt-20 lg:mt-40 px-5 mx-auto max-w-[1300px] lg:px-0  md:min-h-[60vh] ">
           <div className="grid gap-10 lg:gap-32 lg:grid-cols-2 grid-cols-1  items-center justify-between h-auto">
-            <Fade direction="left">
+            <Fade triggerOnce direction="left">
               <div className="col">
-                <Fade direction="up">
+                <Fade triggerOnce direction="up">
                   {" "}
                   <PageTitle start title="Amidst Nature and Culture" />
                 </Fade>
-                <Fade direction="up">
+                <Fade triggerOnce direction="up">
                   {" "}
                   <div className="mt-5">
                     <Paragraph
@@ -133,17 +243,17 @@ const Home: React.FC = () => {
                 </Fade>
               </div>
             </Fade>
-            <Fade direction="right">
+            <Fade triggerOnce direction="right">
               <div className="col mt-5 md:mt-0">
                 <div className="grid grid-cols-1  md:grid-cols-2 gap-4">
                   <div className="grid-cols-1 md:gap-4">
-                    <Fade direction="up">
+                    <Fade triggerOnce direction="up">
                       {" "}
                       <div className="  h-auto rounded  col-span-1 ">
                         <CardforImage alt="" path={Card1} />
                       </div>
                     </Fade>
-                    <Fade direction="up">
+                    <Fade triggerOnce direction="up">
                       {" "}
                       <div className="mt-5  h-auto col-span-1">
                         <CardforImage path={Card2} alt="" />
@@ -151,14 +261,14 @@ const Home: React.FC = () => {
                     </Fade>
                   </div>
                   <div>
-                    <Fade direction="up">
+                    <Fade triggerOnce direction="up">
                       {" "}
                       <div className="  h-auto col-span-1">
                         <CardforImage path={Card3} alt="" />
                       </div>
                     </Fade>
 
-                    <Fade direction="up">
+                    <Fade triggerOnce direction="up">
                       {" "}
                       <div className=" mt-5 h-auto  col-span-1">
                         <CardforImage alt="" path={Card4} />
@@ -170,50 +280,72 @@ const Home: React.FC = () => {
             </Fade>
           </div>
         </section>
-      </div>
-      <section className="h-auto px-5 mx-auto max-w-[1300px] lg:px-0 mt-20 lg:mt-40 md:min-h-[50vh]">
+      </div> */}
+      <section className="h-auto px-5 mx-auto max-w-[1500px] lg:px-0 mt-20 lg:mt-40 md:min-h-[50vh]">
         <div className="grid gap-10 lg:gap-32  lg:grid-cols-2 grid-cols-1 flex-row-reverse md:flex-row  items-center justify-between h-auto">
-          <Fade direction="left">
+          <Fade triggerOnce direction="left">
             <div className="col hidden  md:hidden lg:block">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="grid-cols-1 gap-4">
-                  <Fade direction="up">
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-4 justify-center items-center">
+                <div className="col-span-7 gap-4">
+                  <Fade triggerOnce direction="up">
                     {" "}
-                    <div className="  h-auto row-span-1 col-span-1">
-                      <CardforImage path={Mission1} alt="" />
-                    </div>
+                    <Image
+                      className=" w-auto justify-center relative rounded-tr-[80px] rounded-bl-[80px] z-10 "
+                      src={Mission1}
+                      alt={""}
+                      width={70}
+                      height={50}
+                    />
                   </Fade>
-                  <Fade direction="up">
+                  <Fade triggerOnce direction="up">
                     {" "}
-                    <div className="  md:mt-5 h-auto row-span-2 col-span-1">
-                      <CardforImage path={Mission2} alt="" />
+                    <div className="  md:mt-2 h-auto ">
+                      <Image
+                        className=" w-auto justify-center relative rounded-tl-[80px] rounded-br-[80px] z-10 "
+                        src={Mission2}
+                        alt={""}
+                        width={70}
+                        height={50}
+                      />{" "}
                     </div>
                   </Fade>
                 </div>
-                <div>
-                  <Fade direction="up">
+                <div className="col-span-5 mt-5 pt-5">
+                  <Fade triggerOnce direction="up">
                     {" "}
-                    <div className="  h-auto row-span-2 col-span-1">
-                      <CardforImage path={Mission3} alt="" />
+                    <div className="  h-auto ">
+                      <Image
+                        className=" w-auto justify-center relative rounded-tl-[80px] rounded-br-[80px] z-10 "
+                        src={Mission3}
+                        alt={""}
+                        width={70}
+                        height={50}
+                      />{" "}
                     </div>
                   </Fade>
-                  <Fade direction="up">
+                  <Fade triggerOnce direction="up">
                     {" "}
-                    <div className=" md:mt-5 h-auto row-span-1 col-span-1">
-                      <CardforImage path={Mission4} alt="" />
+                    <div className=" md:mt-2 h-auto ">
+                      <Image
+                        className=" w-auto justify-center relative rounded-tr-[80px] rounded-bl-[80px] z-10 "
+                        src={Mission1}
+                        alt={""}
+                        width={70}
+                        height={50}
+                      />{" "}
                     </div>
                   </Fade>
                 </div>
               </div>
             </div>
           </Fade>
-          <Fade direction="right">
+          <Fade triggerOnce direction="right">
             <div className="col  md:mt-0">
-              <Fade direction="up">
+              <Fade triggerOnce direction="up">
                 {" "}
                 <PageTitle start title="Best of Paradise" />
               </Fade>
-              <Fade direction="up">
+              <Fade triggerOnce direction="up">
                 {" "}
                 <div className="mt-5">
                   <Paragraph
@@ -224,34 +356,58 @@ const Home: React.FC = () => {
               </Fade>
             </div>
           </Fade>
-          <Fade direction="left">
+          <Fade triggerOnce direction="left">
             <div className="lg:hidden md:block mt-5 md:mt-0">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="grid-cols-1 gap-4">
-                  <Fade direction="up">
+                  <Fade triggerOnce direction="up">
                     {" "}
                     <div className="  h-auto row-span-1 col-span-1">
-                      <CardforImage path={Mission1} alt="" />
+                      <Image
+                        className=" w-auto justify-center relative rounded-tr-[170px] rounded-bl-[150px] rounded-br-[150px] z-10 "
+                        src={Mission1}
+                        alt={""}
+                        width={90}
+                        height={50}
+                      />
                     </div>
                   </Fade>
-                  <Fade direction="up">
+                  <Fade triggerOnce direction="up">
                     {" "}
-                    <div className="  mt-5 h-auto row-span-2 col-span-1">
-                      <CardforImage path={Mission2} alt="" />
+                    <div className="mt-5 h-auto row-span-1 col-span-1">
+                      <Image
+                        className=" w-auto justify-center relative rounded-tr-[100px]  rounded-tl-[100px] rounded-bl-[100px] rounded-br-[100px] z-10 "
+                        src={Mission2}
+                        alt={""}
+                        width={90}
+                        height={50}
+                      />
                     </div>
                   </Fade>
                 </div>
                 <div>
-                  <Fade direction="up">
+                  <Fade triggerOnce direction="up">
                     {" "}
                     <div className="  h-auto row-span-2 col-span-1">
-                      <CardforImage path={Mission3} alt="" />
+                      <Image
+                        className=" w-auto justify-center relative rounded-tr-[100px]  rounded-tl-[100px] rounded-bl-[100px] rounded-br-[100px] z-10 "
+                        src={Mission3}
+                        alt={""}
+                        width={90}
+                        height={50}
+                      />{" "}
                     </div>
                   </Fade>
-                  <Fade direction="up">
+                  <Fade triggerOnce direction="up">
                     {" "}
                     <div className=" mt-5 h-auto row-span-1 col-span-1">
-                      <CardforImage path={Mission4} alt="" />
+                      <Image
+                        className=" w-auto justify-center relative rounded-tl-[170px] rounded-tr-[170px] rounded-tb-[150px] rounded-bl-[150px] z-10 "
+                        src={Mission4}
+                        alt={""}
+                        width={90}
+                        height={50}
+                      />{" "}
                     </div>
                   </Fade>
                 </div>
@@ -260,15 +416,15 @@ const Home: React.FC = () => {
           </Fade>
         </div>
       </section>
-      <section className="min-h-[40vh] mt-20 px-5 mx-auto max-w-[1300px] lg:px-0 ">
+      <section className="min-h-[40vh] mt-20 px-5 mx-auto max-w-[1500px] lg:px-0 ">
         <div className="grid md:grid-cols-2 grid-cols-1 gap-10 items-start justify-between h-auto">
-          <Fade direction="left">
+          <Fade triggerOnce direction="left">
             <div className="col bg-white bg-opacity-[0.1] rounded-[6px] border border-white border-opacity-[0.1] backdrop-filter backdrop-blur-[10px] pt-10">
-              <Fade direction="up">
+              <Fade triggerOnce direction="up">
                 {" "}
                 <PageTitle start title="Our team is ready to help!" />
               </Fade>
-              <Fade direction="up">
+              <Fade triggerOnce direction="up">
                 {" "}
                 <div className="mt-5">
                   <Paragraph start paragraph="You can call or whatsapp" />
@@ -276,9 +432,9 @@ const Home: React.FC = () => {
               </Fade>
             </div>
           </Fade>
-          <Fade direction="right">
+          <Fade triggerOnce direction="right">
             <div className="col">
-              <Fade direction="up">
+              <Fade triggerOnce direction="up">
                 {" "}
                 <ContactForm />
               </Fade>

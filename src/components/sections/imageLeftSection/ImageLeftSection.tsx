@@ -16,10 +16,10 @@ export const ImageLeftSection = ({
   title,
 }: ImageLeftSectionProps): JSX.Element => {
   return (
-    <Fade direction="up">
+    <Fade triggerOnce direction="up">
       {" "}
       <div className="grid grid-cols-1 md:grid-cols-5 items-center justify-between h-full">
-        <Fade direction="left">
+        <Fade triggerOnce direction="left">
           <div className="col-span-2 md:mt-0">
             <Image
               className="h-auto md:w-full mx-auto"
@@ -31,13 +31,13 @@ export const ImageLeftSection = ({
           </div>
         </Fade>
 
-        <Fade direction="right">
+        <Fade triggerOnce direction="right">
           <div className="col-span-3 mt-10 md:mt-0">
-            <Fade direction="up">
+            <Fade triggerOnce direction="up">
               {" "}
               <PageTitle start title={title} />
             </Fade>
-            <Fade direction="up">
+            <Fade triggerOnce direction="up">
               {" "}
               <div className="mt-5">
                 <Paragraph start paragraph={description} />

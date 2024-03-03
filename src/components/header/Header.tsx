@@ -32,18 +32,20 @@ export default function Header() {
     <>
       <div
         className={
-          fixedHeader ? "fixed bg-[#040624ad] w-full z-50 " : " bg-white z-50 "
+          fixedHeader
+            ? "fixed bg-[#323346] w-full z-50 "
+            : " bg-[#323346] z-50 "
         }
       >
         <header
           className={
             fixedHeader
-              ? "fixed bg-gradient-to-r from-[#dfa579] via-[#c79081]  to-[#dfa594] hover:bg-gradient-to-br w-full  inset-x-0 top-0 z-50 px-2 lg:px-0 "
-              : "fixed w-full border-b-[0.5px] border-[#dfe1e48f]  inset-x-0 top-0 z-50 bg-white px-2  lg:px-0"
+              ? "fixed bg-DreamhouseColor w-full  inset-x-0 top-0 z-50 px-2 lg:px-0 "
+              : "fixed w-full border-b-[0.5px] border-[#dfe1e48f]  inset-x-0 top-0 z-50 bg-DreamhouseColor px-2  lg:px-0"
           }
         >
           <nav
-            className="flex items-center justify-between p-2 lg:px-0 mx-auto max-w-[1300px]"
+            className="flex items-center justify-between p-2 lg:px-0 mx-auto max-w-[1500px]"
             aria-label="Global"
           >
             <div className="flex lg:flex-1">
@@ -65,7 +67,7 @@ export default function Header() {
                     className="h-8 w-auto"
                     width={200}
                     height={200}
-                    src={Logo}
+                    src={LogoWhite}
                     alt=""
                   />
                 </Link>
@@ -74,21 +76,22 @@ export default function Header() {
             <div className="flex lg:hidden">
               <button
                 type="button"
-                className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+                className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
                 onClick={() => setMobileMenuOpen(true)}
               >
                 <span className="sr-only">Open main menu</span>
                 <Bars3Icon
                   className={
                     fixedHeader
-                      ? "text-lg font-[600] w-6 h-6 font-poppins leading-6 text-gray-500 "
-                      : "text-lg font-[600] w-6 h-6 font-poppins leading-6 text-DreamhouseColor "
+                      ? "text-lg font-[600] w-6 h-6 font-poppins leading-6 text-white "
+                      : "text-lg font-[600] w-6 h-6 font-poppins leading-6 text-white "
                   }
                   aria-hidden="true"
                 />
               </button>
             </div>
-            <div className="hidden lg:flex lg:gap-x-12">
+
+            <div className="hidden lg:flex lg:flex-1 lg:justify-end">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
@@ -96,17 +99,13 @@ export default function Header() {
                   passHref
                   className={
                     fixedHeader
-                      ? "text-md font-[600] font-poppins leading-6 text-gray-700 hover:text-slate-800"
-                      : "text-md font-[600] font-poppins leading-6 text-DreamhouseColor hover:text-slate-800"
+                      ? "text-md font-[400] mx-3 font-poppins leading-6 duration-100 text-white hover:text-sky-200"
+                      : "text-md font-[400] mx-3 font-poppins leading-6 duration-100 text-white hover:text-sky-200"
                   }
                 >
                   {item.name}
                 </Link>
               ))}
-            </div>
-
-            <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-              <ModeToggle />
             </div>
           </nav>
           <MobileMenu
