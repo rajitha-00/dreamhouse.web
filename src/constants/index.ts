@@ -39,21 +39,20 @@ export const footerConnect = [
     key: 2,
     name: "Facebook",
     path: Fb,
-    url: "https://www.facebook.com/Dreamhouse?mibextid=PtKPJ9",
+    url: "",
   },
   { key: 3, name: "X", path: X, url: "" },
   {
     key: 4,
     name: "Instagram",
     path: Insta,
-    url: "https://www.instagram.com/Dreamhouse?igsh=d3Z6eHNmZ3gwamp6",
+    url: "",
   },
 ];
 
 export const footerContacts = [
-  { key: 1, name: "+94 772 219 965" },
-  { key: 2, name: "+94 711 196 965" },
-  { key: 3, name: "+1 515 817 8117" },
+  { key: 1, name: "+94 77 349 0138" },
+  { key: 2, name: "+94 77 291 6601" },
 ];
 
 export const jobs = [

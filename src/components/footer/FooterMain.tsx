@@ -41,13 +41,13 @@ export default function FooterMain() {
         </div>
         <div className="grid md:grid-cols-3 grid-cols-1 gap-8 sm:mt-4 sm:gap-6 pt-16">
           <div>
-            <p className="text-[#49C0B6] font-poppins font-[600] ">Company</p>
+            <p className="text-[#d1d2d5] font-poppins font-[600] ">Home Stay</p>
             <div>
               {footerCompany.map((item) => (
                 <div key={item.key} className="py-1">
                   <Link
                     href={item.path}
-                    className="text-white font-poppins hover:text-[#49C0B6] py-1"
+                    className="text-white font-poppins hover:text-[#d1d2d5] py-1"
                   >
                     {item.name}
                   </Link>
@@ -56,15 +56,15 @@ export default function FooterMain() {
             </div>
           </div>
           <div>
-            <p className="text-[#49C0B6] font-poppins font-[600] ">
-              Other links
+            <p className="text-[#d1d2d5] font-poppins font-[600] ">
+              Other Links
             </p>
             <div>
               {footerOtherlinks.map((item) => (
                 <div key={item.key} className="py-1">
                   <Link
                     href="#"
-                    className="text-white font-poppins hover:text-[#49C0B6] py-1"
+                    className="text-white font-poppins hover:text-[#d1d2d5] py-1"
                   >
                     {item.name}
                   </Link>
@@ -73,23 +73,23 @@ export default function FooterMain() {
             </div>
           </div>
           <div>
-            <p className="text-[#49C0B6] font-poppins font-[600] ">
+            <p className="text-[#d1d2d5] font-poppins font-[600] ">
               Connect With Us
             </p>
             <ul>
               {footerConnect.map((item) => (
                 <li key={item.key} className="py-2">
                   <Link href={item.url}>
-                    <div className="row flex items-center hover:text-[#49C0B6]">
+                    <div className="row flex items-center hover:text-[#d1d2d5]">
                       <div className="col">
                         <Image
                           alt=""
-                          className="text-white hover:text-[#49C0B6]"
+                          className="text-white hover:text-[#d1d2d5]"
                           src={item.path}
                         />
                       </div>
                       <div className="col pl-2">
-                        <p className="text-white hover:text-[#49C0B6] font-poppins">
+                        <p className="text-white hover:text-[#d1d2d5] font-poppins">
                           {item.name}
                         </p>
                       </div>

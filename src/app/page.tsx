@@ -9,6 +9,7 @@ import {
   LongCard,
   PageTitle,
   Paragraph,
+  SmallHomeCard,
 } from "@/components";
 import Card1 from "../assets/home/hometop/1.svg";
 import Card2 from "../assets/home/hometop/3.svg";
@@ -234,64 +235,6 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      {/* <div>
-        <section className="h-auto mt-20 lg:mt-40 px-5 mx-auto max-w-[1300px] lg:px-0  md:min-h-[60vh] ">
-          <div className="grid gap-10 lg:gap-32 lg:grid-cols-2 grid-cols-1  items-center justify-between h-auto">
-            <Fade triggerOnce direction="left">
-              <div className="col">
-                <Fade triggerOnce direction="up">
-                  {" "}
-                  <PageTitle start title="Amidst Nature and Culture" />
-                </Fade>
-                <Fade triggerOnce direction="up">
-                  {" "}
-                  <div className="mt-5">
-                    <Paragraph
-                      start
-                      paragraph="Conceptualized with luxury, serenity and the best of hospitality in mind, the Seven Angels Collection aims to offer guests the finest holiday experience in beautiful locations around Sri Lanka. Our properties exude character from their surrounding historic cities, while also offering modern facilities of a luxury hotel getaway. With exceptional service, a team that has decades of experience and serene surroundings to help you relax, the purpose of our properties is to offer you, our guest, to create an everlasting memory of Sri Lankan hospitality and service."
-                    />
-                  </div>
-                </Fade>
-              </div>
-            </Fade>
-            <Fade triggerOnce direction="right">
-              <div className="col mt-5 md:mt-0">
-                <div className="grid grid-cols-1  md:grid-cols-2 gap-4">
-                  <div className="grid-cols-1 md:gap-4">
-                    <Fade triggerOnce direction="up">
-                      {" "}
-                      <div className="  h-auto rounded  col-span-1 ">
-                        <CardforImage alt="" path={Card1} />
-                      </div>
-                    </Fade>
-                    <Fade triggerOnce direction="up">
-                      {" "}
-                      <div className="mt-5  h-auto col-span-1">
-                        <CardforImage path={Card2} alt="" />
-                      </div>
-                    </Fade>
-                  </div>
-                  <div>
-                    <Fade triggerOnce direction="up">
-                      {" "}
-                      <div className="  h-auto col-span-1">
-                        <CardforImage path={Card3} alt="" />
-                      </div>
-                    </Fade>
-
-                    <Fade triggerOnce direction="up">
-                      {" "}
-                      <div className=" mt-5 h-auto  col-span-1">
-                        <CardforImage alt="" path={Card4} />
-                      </div>
-                    </Fade>
-                  </div>
-                </div>
-              </div>
-            </Fade>
-          </div>
-        </section>
-      </div> */}
       <section className="h-auto px-5 mx-auto max-w-[1500px] lg:px-0 mt-20 lg:mt-40 md:min-h-[50vh]">
         <div className="grid gap-10 lg:gap-32  lg:grid-cols-2 grid-cols-1 flex-row-reverse md:flex-row  items-center justify-between h-auto">
           <Fade triggerOnce direction="left">
@@ -354,7 +297,7 @@ const Home: React.FC = () => {
             <div className="col  md:mt-0">
               <Fade triggerOnce direction="up">
                 {" "}
-                <PageTitle start title="Best of Paradise" />
+                <PageTitle start title="Best of Kandy" />
               </Fade>
               <Fade triggerOnce direction="up">
                 {" "}
@@ -505,6 +448,46 @@ const Home: React.FC = () => {
                   name="Polgolla Dam"
                   byCar
                   car="4 km by vehicle from Polgolla Dam"
+                />
+              </div>
+            </Fade>
+          </div>
+          <div className="col-span-4">
+            <Fade triggerOnce direction="up">
+              <div className="">
+                <SmallHomeCard
+                  key={1}
+                  name="Kandy Lake Round"
+                  byCar
+                  car="1.6 km by vehicle from Kandy Lake"
+                  byFoot
+                  foot="1.4 km by foot from Kandy Lake"
+                />
+              </div>
+            </Fade>
+          </div>
+          <div className="col-span-4">
+            <Fade triggerOnce direction="up">
+              <div className="">
+                <SmallHomeCard
+                  key={1}
+                  name="Kandy Main Bus Stand & Railway Station"
+                  byCar
+                  car="4 km by vehicle from Kandy Railway Station & Main Bus Stand"
+                />
+              </div>
+            </Fade>
+          </div>
+          <div className="col-span-4">
+            <Fade triggerOnce direction="up">
+              <div className="">
+                <SmallHomeCard
+                  key={1}
+                  name="Kandy Avanhala Auditorium"
+                  byCar
+                  car="5.5 km by vehicle from Avanhala Auditorium"
+                  byFoot
+                  foot="1.4 km by foot from Avanhala Auditorium"
                 />
               </div>
             </Fade>
