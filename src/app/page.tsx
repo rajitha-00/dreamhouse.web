@@ -429,7 +429,7 @@ const Home: React.FC = () => {
       </section>
       <section className="h-auto md:min-h-[90vh] lg:mt-40  md:mt-20 mt-10 px-5 mx-auto max-w-[1500px] lg:px-0   ">
         <div className="grid  md:grid-cols-12 grid-cols-1 gap-10 mt-10 md:mt-20">
-          <div className="col-span-8  ">
+          <div className="md:col-span-8  ">
             <Fade triggerOnce direction="up">
               {" "}
               <div className="">
@@ -447,7 +447,7 @@ const Home: React.FC = () => {
               </div>
             </Fade>
           </div>
-          <div className="col-span-4 grid-rows-2 ">
+          <div className="md:col-span-4 grid-rows-2 ">
             <Fade triggerOnce direction="up">
               <div className=" ">
                 <Cardimage
@@ -455,7 +455,7 @@ const Home: React.FC = () => {
                   path={Card5}
                   description=""
                   key={1}
-                  name="Hanthana International Bird park & Recreation"
+                  name="Hanthana International Bird park"
                   byCar
                   car="8.1 km by vehicle from Hanthana International Bird park & Recreation"
                 />
