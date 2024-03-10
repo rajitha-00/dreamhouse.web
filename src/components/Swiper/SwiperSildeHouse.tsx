@@ -1,58 +1,100 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import SL1 from "../../assets/home/swiper/1.png";
-import SL2 from "../../assets/home/swiper/2.png";
-import SL3 from "../../assets/home/swiper/3.png";
-import SL4 from "../../assets/home/swiper/4.png";
-import SL5 from "../../assets/home/swiper/5.png";
+import SL1 from "../../assets/home/swiper/1.jpg";
+import SL2 from "../../assets/home/swiper/2.jpg";
+import SL3 from "../../assets/home/swiper/3.jpg";
+import SL4 from "../../assets/home/swiper/4.jpg";
+import SL5 from "../../assets/home/swiper/5.jpg";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-creative";
 
 // import required modules
-import { EffectCreative, Autoplay } from "swiper/modules";
-import Image from "next/image";
+import { Autoplay, Pagination } from "swiper/modules";
+
+import { SwiperCard } from "..";
 type SwiperSildeHouseProps = {};
 
 export const SwiperSildeHouse = ({}: SwiperSildeHouseProps): JSX.Element => {
   return (
     <>
       <Swiper
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: false,
+        pagination={{
+          clickable: true,
         }}
+        autoplay={true}
         grabCursor={true}
-        effect={"creative"}
-        creativeEffect={{
-          prev: {
-            shadow: true,
-            translate: ["-20%", 0, -1],
-          },
-          next: {
-            translate: ["100%", 0, 0],
-          },
-        }}
-        modules={[EffectCreative, Autoplay]}
-        className="mySwiper3"
+        slidesPerView={"auto"}
+        modules={[Pagination]}
+        className="mySwiper"
       >
         <SwiperSlide>
-          <Image alt="" src={SL1} />
+          <SwiperCard
+            alt=""
+            path={SL1}
+            description=""
+            key={1}
+            name="Sri Dalada Maligawa | The Temple of the Sacred Tooth Relic"
+            byCar
+            car="5.5 km by vehicle from Temple of tooth"
+            byFoot
+            foot="1.4 km by foot from Temple of tooth"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <Image alt="" src={SL2} />
+          <SwiperCard
+            alt=""
+            path={SL2}
+            description=""
+            key={1}
+            name="Sri Dalada Maligawa | The Temple of the Sacred Tooth Relic"
+            byCar
+            car="5.5 km by vehicle from Temple of tooth"
+            byFoot
+            foot="1.4 km by foot from Temple of tooth"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <Image alt="" src={SL3} />
+          <SwiperCard
+            alt=""
+            path={SL3}
+            description=""
+            key={1}
+            name="Sri Dalada Maligawa | The Temple of the Sacred Tooth Relic"
+            byCar
+            car="5.5 km by vehicle from Temple of tooth"
+            byFoot
+            foot="1.4 km by foot from Temple of tooth"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <Image alt="" src={SL4} />
+          <SwiperCard
+            alt=""
+            path={SL5}
+            description=""
+            key={1}
+            name="Sri Dalada Maligawa | The Temple of the Sacred Tooth Relic"
+            byCar
+            car="5.5 km by vehicle from Temple of tooth"
+            byFoot
+            foot="1.4 km by foot from Temple of tooth"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <Image alt="" src={SL5} />
+          <SwiperCard
+            alt=""
+            path={SL4}
+            description=""
+            key={1}
+            name="Sri Dalada Maligawa | The Temple of the Sacred Tooth Relic"
+            byCar
+            car="5.5 km by vehicle from Temple of tooth"
+            byFoot
+            foot="1.4 km by foot from Temple of tooth"
+          />
         </SwiperSlide>
       </Swiper>
     </>

@@ -2,9 +2,7 @@
 import { PrimaryButton } from "@/components/Buttons/PrimaryButton/PrimaryButton";
 import Image from "next/image";
 import React from "react";
-import HeroImage from "../assets/hero/hero.svg";
 import {
-  CardforImage,
   Cardimage,
   LongCard,
   PageTitle,
@@ -12,13 +10,12 @@ import {
   SmallHomeCard,
 } from "@/components";
 import Card1 from "../assets/home/hometop/1.svg";
-import Card2 from "../assets/home/hometop/3.svg";
+import Card2 from "../assets/home/Rooms/s1.svg";
 import Card3 from "../assets/home/hometop/2.svg";
-import Card4 from "../assets/home/hometop/4.svg";
+import Card4 from "../assets/home/hometop/7.svg";
 import Mission1 from "../assets/home/bestofkandy/1.svg";
 import Mission2 from "../assets/home/bestofkandy/2.svg";
 import Mission3 from "../assets/home/bestofkandy/3.svg";
-import Mission4 from "../assets/home/bestofkandy/4.svg";
 import Card6 from "../assets/home/kandy/maligawa.svg";
 import Card5 from "../assets/home/kandy/birds.svg";
 import Card7 from "../assets/home/kandy/garden.svg";
@@ -45,66 +42,65 @@ const Home: React.FC = () => {
       <div className="heroContainer px-5 mx-auto max-w-[1500px] lg:px-0  sm:min-h-[80vh] md:min-h-[50vh] md:h-auto lg:min-h-[90vh] items-center flex  ">
         <div className="grid md:grid-cols-5 grid-cols-1 items-center h-[100%]">
           <div className="mt-10 md:hidden md:mt-0 col-span-3 md:pl-20">
-            <Fade triggerOnce direction="right">
-              {" "}
-              <div className="col mt-5 md:mt-0">
-                <div className="grid grid-cols-1  md:grid-cols-2 gap-4">
-                  <div>
-                    <Fade triggerOnce direction="up">
-                      {" "}
-                      <div className="rounded-tl-[80px] rounded-bl-[80px]   col-span-1">
+            <div className="col mt-5 md:mt-0">
+              <div className="grid  grid-cols-12 gap-4 justify-center items-center">
+                <div className="col-span-7">
+                  <Fade triggerOnce direction="up">
+                    {" "}
+                    <div className="   col-span-1">
+                      <div className="rounded-[80px] relative">
                         <Image
-                          className=" w-auto justify-center relative rounded-tr-[170px] rounded-bl-[150px] rounded-br-[150px] z-10 "
+                          className=" w-auto justify-center relative rounded-tr-[80px] rounded-bl-[80px] z-10 "
                           src={Card1}
                           alt={""}
                           width={90}
                           height={50}
                         />
                       </div>
-                    </Fade>
-                    <Fade triggerOnce direction="up">
-                      {" "}
-                      <div className="mt-2   ">
-                        <Image
-                          className=" w-auto justify-center relative rounded-tl-[100px]  rounded-tr-[100px] rounded-bl-[100px] rounded-br-[100px] z-10 "
-                          src={Card2}
-                          alt={""}
-                          width={90}
-                          height={50}
-                        />
-                      </div>
-                    </Fade>
-                  </div>
-                  <div>
-                    <Fade triggerOnce direction="up">
-                      {" "}
-                      <div className="">
-                        <Image
-                          className=" w-auto justify-center relative rounded-tl-[100px]  rounded-tr-[100px] rounded-bl-[100px] rounded-br-[100px] z-10 "
-                          src={Card3}
-                          alt={""}
-                          width={90}
-                          height={50}
-                        />
-                      </div>
-                    </Fade>
+                    </div>
+                  </Fade>
+                  <Fade triggerOnce direction="up">
+                    {" "}
+                    <div className="mt-2   ">
+                      <Image
+                        className=" w-auto justify-center relative rounded-tl-[80px] rounded-br-[80px] z-10 "
+                        src={Card2}
+                        alt={""}
+                        width={70}
+                        height={50}
+                      />
+                    </div>
+                  </Fade>
+                </div>
+                <div className="justify-center items-center col-span-5">
+                  <Fade triggerOnce direction="up">
+                    {" "}
+                    <div className="">
+                      <Image
+                        className=" w-auto justify-center relative rounded-tl-[80px] rounded-br-[80px] z-10 "
+                        src={Card3}
+                        alt={""}
+                        width={70}
+                        height={50}
+                      />
+                    </div>
+                  </Fade>
 
-                    <Fade triggerOnce direction="up">
-                      {" "}
-                      <div className=" mt-5  ">
-                        <Image
-                          className=" w-auto justify-center relative rounded-tl-[170px]  rounded-tr-[170px]  rounded-bl-[170px] z-10 "
-                          src={Card4}
-                          alt={""}
-                          width={90}
-                          height={50}
-                        />{" "}
-                      </div>
-                    </Fade>
-                  </div>
+                  <Fade triggerOnce direction="up">
+                    {" "}
+                    <div className=" mt-2  ">
+                      <Image
+                        className=" w-auto justify-center relative rounded-tr-[80px] rounded-bl-[80px] z-10 "
+                        src={Card4}
+                        alt={""}
+                        width={70}
+                        height={50}
+                      />
+                    </div>
+                  </Fade>
                 </div>
               </div>
-            </Fade>
+            </div>
           </div>
           <div className="block md:hidden col-span-2 relative">
             <Fade triggerOnce direction="left"></Fade>
@@ -238,8 +234,8 @@ const Home: React.FC = () => {
       <section className="h-auto px-5 mx-auto max-w-[1500px] lg:px-0 mt-20 lg:mt-40 md:min-h-[50vh]">
         <div className="grid gap-10 lg:gap-32  lg:grid-cols-2 grid-cols-1 flex-row-reverse md:flex-row  items-center justify-between h-auto">
           <Fade triggerOnce direction="left">
-            <div className="col hidden  md:hidden lg:block">
-              <div className="grid grid-cols-1 md:grid-cols-12 gap-4 justify-center items-center">
+            <div className="block">
+              <div className="grid grid-cols-12 gap-4 justify-center items-center">
                 <div className="col-span-7 gap-4">
                   <Fade triggerOnce direction="up">
                     {" "}
@@ -308,64 +304,6 @@ const Home: React.FC = () => {
                   />
                 </div>
               </Fade>
-            </div>
-          </Fade>
-          <Fade triggerOnce direction="left">
-            <div className="lg:hidden md:block mt-5 md:mt-0">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="grid-cols-1 gap-4">
-                  <Fade triggerOnce direction="up">
-                    {" "}
-                    <div className="  h-auto row-span-1 col-span-1">
-                      <Image
-                        className=" w-auto justify-center relative rounded-tr-[170px] rounded-bl-[150px] rounded-br-[150px] z-10 "
-                        src={Mission1}
-                        alt={""}
-                        width={90}
-                        height={50}
-                      />
-                    </div>
-                  </Fade>
-                  <Fade triggerOnce direction="up">
-                    {" "}
-                    <div className="mt-5 h-auto row-span-1 col-span-1">
-                      <Image
-                        className=" w-auto justify-center relative rounded-tr-[100px]  rounded-tl-[100px] rounded-bl-[100px] rounded-br-[100px] z-10 "
-                        src={Mission2}
-                        alt={""}
-                        width={90}
-                        height={50}
-                      />
-                    </div>
-                  </Fade>
-                </div>
-                <div>
-                  <Fade triggerOnce direction="up">
-                    {" "}
-                    <div className="  h-auto row-span-2 col-span-1">
-                      <Image
-                        className=" w-auto justify-center relative rounded-tr-[100px]  rounded-tl-[100px] rounded-bl-[100px] rounded-br-[100px] z-10 "
-                        src={Mission3}
-                        alt={""}
-                        width={90}
-                        height={50}
-                      />{" "}
-                    </div>
-                  </Fade>
-                  <Fade triggerOnce direction="up">
-                    {" "}
-                    <div className=" mt-5 h-auto row-span-1 col-span-1">
-                      <Image
-                        className=" w-auto justify-center relative rounded-tl-[170px] rounded-tr-[170px] rounded-tb-[150px] rounded-bl-[150px] z-10 "
-                        src={Mission4}
-                        alt={""}
-                        width={90}
-                        height={50}
-                      />{" "}
-                    </div>
-                  </Fade>
-                </div>
-              </div>
             </div>
           </Fade>
         </div>

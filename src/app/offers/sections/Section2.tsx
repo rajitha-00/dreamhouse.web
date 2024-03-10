@@ -28,7 +28,7 @@ export const Section2 = ({}: Section2Props): JSX.Element => {
                   viewpoint={item.viewpoint}
                   balcony={item.balcony}
                   wifi={item.wifi}
-                  tea={item.tea}
+                  // tea={item.tea}
                   hasApply
                 />
               </Fade>

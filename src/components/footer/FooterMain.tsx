@@ -37,7 +37,9 @@ export default function FooterMain() {
               </Link>
             </div>
           ))}
-          <p className="text-white font-poppins  py-2">info@Dreamhouse.com</p>
+          <p className="text-white font-poppins  py-2">
+            dreamhouseresidence5@gmail.com
+          </p>
         </div>
         <div className="grid md:grid-cols-3 grid-cols-1 gap-8 sm:mt-4 sm:gap-6 pt-16">
           <div>

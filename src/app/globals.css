@@ -17,51 +17,7 @@
   background: rgba(249, 249, 249, 0.1);
   backdrop-filter: blur(20px);
 }
-.section-background-bottom {
-  position: relative;
-  bottom: 0;
-  right: 0;
-  width: 50%;
-  overflow: hidden;
-  background-image: url(../assets/home/bottomMoon.svg);
-  background-size: cover;
-  height: 60vh;
-  background-repeat: no-repeat;
-}
-.sectionBackground-services {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  background-image: url(../assets/hero/heroBlue.svg);
-  background-size: cover;
-  height: 60vh;
-  background-repeat: no-repeat;
-}
-.sectionBackground-about {
-  position: absolute;
-  margin-top: 50px;
-  width: 60%;
-  overflow: hidden;
-  background-image: url(../assets/about/world-map.svg);
-  background-size: contain;
-  height: 100vh;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.sectionBackground-hero {
-  position: absolute;
-  right: 0;
-  overflow: hidden;
-  background-image: url(../assets/home/heroMain.png);
-  background-size: contain;
-  height: 100vh;
-  background-repeat: no-repeat;
-  display: flex;
-}
+
 .selected {
   /* Apply styles for the selected state */
   border: 2px solid #3498db; /* Border color for selected state (optional) */

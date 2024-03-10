@@ -7,7 +7,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { navigation } from "@/constants";
 import Logo from "../../../public/logo.svg";
-import { ModeToggle } from "..";
 
 type MobileMenuProps = {
   open: boolean;
@@ -61,9 +60,6 @@ export const MobileMenu = ({
                       {item.name}
                     </Link>
                   ))}
-                </div>
-                <div className="py-6">
-                  <ModeToggle />
                 </div>
               </div>
             </div>

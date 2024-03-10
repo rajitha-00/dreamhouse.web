@@ -8,6 +8,16 @@ import RR2 from "../assets/home/Rooms/rr2.svg";
 import RR3 from "../assets/home/Rooms/rr3.svg";
 import RR4 from "../assets/home/Rooms/rr4.svg";
 
+import f1 from "../assets/home/Rooms/f1.svg";
+import f2 from "../assets/home/Rooms/f2.svg";
+import f3 from "../assets/home/Rooms/f3.svg";
+import f4 from "../assets/home/Rooms/f4.svg";
+
+import s1 from "../assets/home/Rooms/s1.svg";
+import s2 from "../assets/home/Rooms/s2.svg";
+import s3 from "../assets/home/Rooms/f3.svg";
+import s4 from "../assets/home/Rooms/s4.svg";
+
 import Fb from "../assets/contact/facebook.svg";
 import X from "../assets/contact/X.svg";
 import Insta from "../assets/contact/insta.svg";
@@ -35,7 +45,11 @@ export const aboutHero = [
 export const footerCompany = [
   { key: 1, name: "Home", path: "/" },
   { key: 2, name: "Offers", path: "/offers" },
-  { key: 3, name: "About Us", path: "/about" },
+  {
+    key: 3,
+    name: "Get Directions",
+    path: "https://www.google.com/maps/dir//Temple+of+the+Tooth+Museum,+Kandy/@7.2935442,80.6003109,13z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x3ae3662dc9c94c75:0xe1885fe2929d358!2m2!1d80.6415106!2d7.2934609!3e2?entry=ttu",
+  },
   { key: 4, name: "Contact Us", path: "/contact" },
 ];
 
@@ -67,15 +81,14 @@ export const footerContacts = [
 export const jobs = [
   {
     key: 1,
-    name: "DELUXE ROOM  $ 55 ",
-    occupancy: "2 adults and 1 child",
+    name: "DELUXE ROOM 1 : $ 60 ",
+    occupancy: "2 adults",
     size: "Hot water",
-    description: "$ 55 Per Night",
+    description: "$ 60 Per Night",
     view: " AC",
     viewpoint: "Knuckles mountain range",
     balcony: "Amaizing balcony",
-    tea: "Morning tea",
-    wifi: "Free wifi",
+    wifi: "Free WiFi",
     path1: R1,
     path2: R2,
     path3: R3,
@@ -84,39 +97,46 @@ export const jobs = [
   },
   {
     key: 2,
-    name: "SUPERIOR ROOM  $ 33",
+    name: "DELUXE ROOM 2 : $ 60",
     size: "Hot water",
-    description: "$ 33 Per Night",
-    occupancy: "2 adults and 1 child",
+    description: "$ 60 Per Night",
+    occupancy: "2 adults",
     view: "Non - AC (Fans Included)",
-    tea: "Morning tea",
-    wifi: "Free wifi",
+    wifi: "Free WiFi",
     path1: RR1,
     path2: RR2,
     path3: RR3,
     path4: RR4,
     alt: "DELUXE ROOM",
   },
-  // {
-  //   key: 3,
-  //   name: "KING SUITE",
-  //   size: "25 sqm",
-  //   description:
-  //     "Sweeping views of the majestic Hanthana mountains greet you as soon as you enter the Suite. Equipped with a panoramic seating area, and dining area our Suites are ideal for couples that yearn that extra privacy and indulgence.",
-  //   occupancy: "2 adults and 1 child",
-  //   view: "with mountain views",
-  //   path: Job,
-  //   alt: "KING SUITE",
-  // },
-  // {
-  //   key: 4,
-  //   name: "FAMILY SUITE",
-  //   size: "25 sqm",
-  //   description:
-  //     "Sweeping views of the majestic Hanthana mountains greet you as soon as you enter the Suite. Equipped with a panoramic seating area, and dining area our Suites are ideal for couples that yearn that extra privacy and indulgence.",
-  //   occupancy: "2 adults and 1 child",
-  //   view: "with mountain views",
-  //   path: Job,
-  //   alt: "FAMILY SUITE",
-  // },
+  {
+    key: 3,
+    name: "SUPERIOR ROOM 1 : $ 45",
+    size: "Hot water",
+    description: "$ 45 Per Night",
+    occupancy: "2 adults",
+    viewpoint: "Knuckles mountain range",
+    view: "Non - AC (Fans Included)",
+    wifi: "Free WiFi",
+    path1: s1,
+    path2: s2,
+    path3: s3,
+    path4: s4,
+    alt: "DELUXE ROOM",
+  },
+  {
+    key: 4,
+    name: "SUPERIOR ROOM 2 : $ 45",
+    size: "Hot water",
+    description: "$ 45 Per Night",
+    occupancy: "2 adults",
+    viewpoint: "Knuckles mountain range",
+    view: "Non - AC (Fans Included)",
+    wifi: "Free WiFi",
+    path1: f1,
+    path2: f2,
+    path3: f3,
+    path4: f4,
+    alt: "DELUXE ROOM",
+  },
 ];
