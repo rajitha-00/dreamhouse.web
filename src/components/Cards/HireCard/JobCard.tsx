@@ -148,7 +148,11 @@ export const JobCard = ({
         </div>
         {hasApply && (
           <>
-            <PrimaryButton name="Book now" hasArrow url="" />
+            <PrimaryButton
+              name="Book Now"
+              hasArrow
+              url="https://www.airbnb.com/rooms/1109105668424536808?guests=1&adults=1&s=67&unique_share_id=b38c6228-0bec-46e2-bc63-7f3e529d98ba&source_impression_id=p3_1710071310_IFuEFuscWdGGw96N"
+            />
           </>
         )}
       </div>
