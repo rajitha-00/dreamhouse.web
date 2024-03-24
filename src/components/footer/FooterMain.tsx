@@ -27,8 +27,7 @@ export default function FooterMain() {
             />
           </Link>
           <p className="text-white font-poppins py-4">
-            We have the best people to serve <br /> the right problems in the
-            right way
+            We serve best in the city <br />
           </p>
           {footerContacts.map((item) => (
             <div key={item.key}>

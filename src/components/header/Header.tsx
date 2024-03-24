@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 import { ArrowRightIcon, Bars3Icon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Logo from "../../../public/logo.svg";
-import LogoWhite from "../../../public/logoWhite.svg";
+import LogoWhite from "../../../public/logo.svg";
 
 import { navigation } from "@/constants";
 import { MobileMenu } from "./MobileMenu";
@@ -40,8 +40,8 @@ export default function Header() {
         <header
           className={
             fixedHeader
-              ? "fixed bg-DreamhouseColor w-full  inset-x-0 top-0 z-50 px-2 lg:px-0 "
-              : "fixed w-full border-b-[0.5px] border-[#dfe1e48f]  inset-x-0 top-0 z-50 bg-DreamhouseColor px-2  lg:px-0"
+              ? "fixed bg-white w-full  inset-x-0 top-0 z-50 px-2 lg:px-0 "
+              : "fixed w-full border-b-[0.5px] border-[#dfe1e48f]  inset-x-0 top-0 z-50 bg-white px-2  lg:px-0"
           }
         >
           <nav
@@ -53,7 +53,7 @@ export default function Header() {
                 <Link href="/">
                   <span className="sr-only">Your Company</span>
                   <Image
-                    className="h-8 w-auto"
+                    className="h-14 w-auto"
                     width={200}
                     height={200}
                     src={LogoWhite}
@@ -64,7 +64,7 @@ export default function Header() {
                 <Link href="/">
                   <span className="sr-only">Your Company</span>
                   <Image
-                    className="h-8 w-auto"
+                    className="h-14 w-auto"
                     width={200}
                     height={200}
                     src={LogoWhite}
@@ -76,15 +76,15 @@ export default function Header() {
             <div className="flex lg:hidden">
               <button
                 type="button"
-                className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
+                className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-[#03587C]"
                 onClick={() => setMobileMenuOpen(true)}
               >
                 <span className="sr-only">Open main menu</span>
                 <Bars3Icon
                   className={
                     fixedHeader
-                      ? "text-lg font-[600] w-6 h-6 font-poppins leading-6 text-white "
-                      : "text-lg font-[600] w-6 h-6 font-poppins leading-6 text-white "
+                      ? "text-lg font-[600] w-6 h-6 font-poppins leading-6 text-[#03587C] "
+                      : "text-lg font-[600] w-6 h-6 font-poppins leading-6 text-[#03587C] "
                   }
                   aria-hidden="true"
                 />
@@ -99,8 +99,8 @@ export default function Header() {
                   passHref
                   className={
                     fixedHeader
-                      ? "text-md font-[400] mx-3 font-poppins leading-6 duration-100 text-white hover:text-sky-200"
-                      : "text-md font-[400] mx-3 font-poppins leading-6 duration-100 text-white hover:text-sky-200"
+                      ? "text-md font-[400] mx-3 font-poppins leading-6 duration-100 text-[#03587C] hover:text-sky-200"
+                      : "text-md font-[400] mx-3 font-poppins leading-6 duration-100 text-[#03587C] hover:text-sky-200"
                   }
                 >
                   {item.name}
